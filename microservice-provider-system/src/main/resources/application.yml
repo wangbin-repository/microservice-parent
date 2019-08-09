@@ -12,3 +12,9 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:10001/eureka
+#服务信息
+info:
+  app.name: microservice-parent
+  company.name: www.xxx.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
