@@ -11,7 +11,7 @@ eureka:
     prefer-ip-address: true
   client:
     service-url:
-      defaultZone: http://localhost:10001/eureka
+      defaultZone: http://192.168.52.101:10001/eureka,http://192.168.52.102:10001/eureka,http://192.168.52.103:10001/eureka
 #服务信息
 info:
   app.name: microservice-parent
