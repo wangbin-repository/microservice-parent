@@ -17,6 +17,6 @@ public class ConsumerController {
 
     @RequestMapping(value = "/ribbon-consumer", method = RequestMethod.GET)
     public String getUserInfo() {
-        return restTemplate.getForObject(REST_URI_PREFIX + "/getDiscoveryClient", String.class);
+        return restTemplate.getForObject(REST_URI_PREFIX + "/getInstanceId", String.class);
     }
 }
