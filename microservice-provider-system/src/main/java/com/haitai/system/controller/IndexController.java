@@ -7,11 +7,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @Description:
  * @Author: bin.wang
- * @CreateDate: 2019/8/15 18:05
- * @Version: 1.0
- * @Copyright: Copyright (c) 2019 haitai
  */
 @RestController
 public class IndexController {
