@@ -19,7 +19,7 @@ public class IndexController {
     private DiscoveryClient discoveryClient;
 
     @RequestMapping(value = "/getDiscoveryClient", method = RequestMethod.GET)
-    public String getDiscoveryClient() {
-        return discoveryClient.toString();
+    public Object getDiscoveryClient() {
+        return discoveryClient;
     }
 }
