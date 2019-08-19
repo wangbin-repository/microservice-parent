@@ -17,14 +17,14 @@ public class RibbonConfig {
         return new RestTemplate();
     }
 
-    @Bean
-    public IRule myRule() {
+//    @Bean
+//    public IRule myRule() {
 
         /*轮询(默认)*/
 //        return new RoundRobinRule();
 
         /*随机*/
-        return new RandomRule();
+//        return new RandomRule();
 
         /*会先过滤掉由于多次访问故障而处于断路器跳闸状态的服务，还有并发的连接数量超过阈值的服务，然后对剩余的服务列表按照轮询策略进行访问*/
 //        return new AvailabilityFilteringRule();
@@ -40,5 +40,5 @@ public class RibbonConfig {
 
         /*默认规则，复合判断server所在区域的性能和server的可用性选择服务器*/
 //        return new ZoneAvoidanceRule();
-    }
+//    }
 }
