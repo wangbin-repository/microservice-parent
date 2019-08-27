@@ -6,14 +6,14 @@ spring:
 eureka:
   instance:
     #自定义服务名称信息
-#    instance-id: microservice-provider-system
+    #instance-id: microservice-provider-system
     hostname: ${spring.cloud.client.ip-address}
     instance-id: ${eureka.instance.hostname}:${server.port}
     #显示IP地址
     prefer-ip-address: true
   client:
     service-url:
-      defaultZone: http://192.168.52.101:10001/eureka,http://192.168.52.102:10001/eureka,http://192.168.52.103:10001/eureka
+      defaultZone: http://192.168.1.101:10001/eureka,http://192.168.1.102:10001/eureka,http://192.168.1.103:10001/eureka
 #服务信息
 info:
   app.name: microservice-parent
