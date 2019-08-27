@@ -11,7 +11,7 @@ eureka:
     ip-address: ${EUREKA_IP:${eureka.instance.hostname}} #强制指定eureka的ip地址
   client:
     service-url:
-      defaultZone: http://192.168.52.101:10001/eureka/,http://192.168.52.103:10001/eureka/
+      defaultZone: http://192.168.1.101:10001/eureka/,http://192.168.1.103:10001/eureka/
     fetch-registry: true        #集群时需要强制手动指定，fetch-registry、register-with-eureka都需要设置为true
     register-with-eureka: true  #集群时需要强制手动指定，fetch-registry、register-with-eureka都需要设置为true
 #服务信息
