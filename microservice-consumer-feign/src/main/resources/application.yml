@@ -8,4 +8,7 @@ eureka:
     register-with-eureka: false
     fetch-registry: true
     service-url:
-      defaultZone: http://192.168.52.101:10001/eureka,http://192.168.52.102:10001/eureka,http://192.168.52.103:10001/eureka
+      defaultZone: http://192.168.1.101:10001/eureka,http://192.168.1.102:10001/eureka,http://192.168.1.103:10001/eureka
+feign:
+  hystrix:
+    enabled: true
